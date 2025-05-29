@@ -192,3 +192,54 @@ button:disabled {
 .insights-content p {
   margin: 0 0 15px 0;
 }
+
+/* Layout and Sidebar*/
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #f5f6fa;
+  border-right: 1px solid #e1e1e1;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.past-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.past-list li {
+  padding: 8px 4px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.past-list li.selected {
+  background: #e0e7ff;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #c00;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container {
+  flex: 1;
+  padding: 32px;
+}

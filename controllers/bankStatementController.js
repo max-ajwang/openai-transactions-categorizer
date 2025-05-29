@@ -7,12 +7,6 @@ import { OpenAI } from 'openai';
 import multer from 'multer';
 import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf.js';
 
-// congigure PDF.js worker path
-// pdfjs.GlobalWorkerOptions.workerSrc = path.join(
-//   path.dirname(new URL(import.meta.url).pathname),
-//   '../node_modules/pdfjs-dist/build/pdf.worker.min.js'
-// );
-
 // file upload
 const storage = multer.diskStorage({
   destination: async (req, file, cb) => {
